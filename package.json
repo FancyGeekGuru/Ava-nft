@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alch/alchemy-web3": "^1.1.9",
     "@openzeppelin/contracts": "^3.4.2",
     "dotenv": "^10.0.0"
   },
