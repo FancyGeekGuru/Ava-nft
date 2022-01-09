@@ -1,0 +1,12 @@
+{
+    "attributes" : [ {
+      "trait_type" : "Species",
+      "value" : "Wolf"
+    }, {
+      "trait_type" : "Eye color",
+      "value" : "White"
+    } ],
+    "description" : "The world's most adorable and sensitive wolf.",
+    "image" : "https://gateway.pinata.cloud/ipfs/QmV5Gh4f2jXPGs6N82XsBAd4VxwmAsniqcEWq8mM5ceb33",
+    "name" : "Ice Griffin"
+}
