@@ -23,4 +23,12 @@ async function mintNFT(tokenURI) {
         'maxPriorityFeePerGas': 1999999987,
         'data': nftContract.methods.mintNFT(PUBLIC_KEY, tokenURI).encodeABI()
     };
+
+    const signedTx = await web3.eth.accounts.signTransaction(tx, PRIVATE_KEY);
+    const transactionReceipt = await web3.eth.sendSignedTransaction(signedTx.rawTransaction);
+
+    console.log(`Transaction receipt: ${JSON.stringify(transactionReceipt)}`);
 }
+
+metadataAddress = 'https://gateway.pinata.cloud/ipfs/QmSF3WwyftE7ph1WBThdD2Bk38xxpxWuqHLAuvnwULzD1E';
+mintNFT(metadataAddress);
